@@ -1,0 +1,156 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffeb99;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+}
+
+html {
+    overflow-x: hidden;  /* Ensure no horizontal scroll */
+}
+
+/* Main container */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff9900;
+}
+
+.intro-text {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #cc7700;
+}
+
+/* Hide elements initially */
+.hidden {
+    display: none;
+}
+
+/* Message Styling */
+.message {
+    font-size: 1.4em;
+    padding: 20px;
+    line-height: 1.6;
+    background: white;
+    color: #ff9900;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    border: 2px solid #ff9900;
+}
+
+strong {
+    font-size: 1.5em;
+    color: #cc7700;
+}
+
+/* Carousel Styling */
+.carousel {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.carousel-wrapper {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #ff9900;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.carousel-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Carousel Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 153, 0, 0.8);
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(204, 119, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Falling Balloons Animation */
+.balloon {
+    position: fixed;
+    left: auto;
+    right: auto;
+    font-size: 24px;
+    animation: float linear infinite;
+    user-select: none;
+}
+
+@keyframes float {
+    0% {
+        bottom: -10%;
+        opacity: 1;
+    }
+    100% {
+        bottom: 110%;
+        opacity: 0;
+    }
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ff9900;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 0 0 12px 12px;
+}
